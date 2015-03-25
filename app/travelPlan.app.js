@@ -2,14 +2,17 @@
 
 // Declare app level module which depends on views, and components
 angular.module('travelPlaneApp', [
-  'ngRoute', 'myApp.version',
-    'travelPlaneApp.search'
+  'ngRoute', 'travelPlaneApp.search', 'travelPlaneApp.travelplan', 'travelPlaneApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-
   $routeProvider.
       when('/search', {
           templateUrl: 'components/search/search.html',
           controller: 'SearchCtrl'
-      }).otherwise({redirectTo: '/view1'});
+      }).
+      when('/travelplan', {
+          templateUrl: 'components/travelplan/travelplan.html',
+          controller: 'TravelplanCtrl'
+      }).
+      otherwise({redirectTo: '/search'});
 }]);

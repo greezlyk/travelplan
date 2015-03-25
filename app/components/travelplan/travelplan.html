@@ -1,0 +1,20 @@
+<h1> Travel Plan</h1>
+<br/>
+
+    <div class="row" ng-controller="TravelplanCtrl as travelCtrl">
+
+        <p><i>Where to go: </i>Barcelona</p>
+        <p><i>Name of the trip:</i> First time in Barcelona for 9 days</p>
+        <p><i>Existing plan: </i>Barcelona</p>
+        <p><i>Travel plan: </i>Barcelona</p>
+
+        <br><br><br>
+        <table class="table">
+            <tr ng-repeat="day in travelCtrl.days">
+                <td class="col-sm-1">{{ day.sartdate }}</td>
+                <td class="col-lg-5">{{ day.plan }}</td>
+                <td class="col-sm-1">{{ day.wather }}</td>
+            </tr>
+        </table>
+
+    </div>

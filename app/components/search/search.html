@@ -1,6 +1,17 @@
-
-<h1>Search page.</h1>
-
 Choose travel :
 <br/>
-<input ng-model="search.from" />
+<div class="container">
+    <form ng-controller="SearchCtrl as search">
+        <div class="row">
+            <div class="col-md-2">
+                <input ng-model="search.from"/>
+            </div>
+            <div class="col-md-2">
+                <input ng-model="search.to"/>
+            </div>
+            <div class="col-md-2">
+                <button ng-click="search.searchCoomand('/travelplan')" class="btn btn-default" >Search</button>
+            </div>
+        </div>
+    </form>
+</div>
