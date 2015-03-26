@@ -1,4 +1,4 @@
-#travelplan test project angular-seed — the seed for AngularJS apps
+#The travelplan test project based on angular-seed — the seed for AngularJS apps
 
 
 ## Getting Started
