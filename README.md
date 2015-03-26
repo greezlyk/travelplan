@@ -58,6 +58,8 @@ Now browse to the app at `http://localhost:8000/app/index.html`.
 app/                    --> all of the source files for the application
   app.css               --> default stylesheet
   components/           --> all app specific modules
+    search/                --> search module
+    travelplan/                --> travelplan module
     version/              --> version related components
       version.js                 --> version module declaration and basic "version" value service
       version_test.js            --> "version" value service tests
