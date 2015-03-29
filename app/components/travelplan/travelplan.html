@@ -1,20 +1,30 @@
 <h1> Travel Plan</h1>
 <br/>
 
-    <div class="row" ng-controller="TravelplanCtrl as travelCtrl">
+<div class="travelplan"  ng-controller="TravelplanCtrl as travelCtrl">
 
-        <p><i>Where to go: </i>Barcelona</p>
-        <p><i>Name of the trip:</i> First time in Barcelona for 9 days</p>
-        <p><i>Existing plan: </i>Barcelona</p>
-        <p><i>Travel plan: </i>Barcelona</p>
+    <p><i>Where to go: </i>Barcelona</p>
+    <p><i>Name of the trip:</i> First time in Barcelona for 9 days</p>
+    <p><i>Existing plan: </i>Barcelona</p>
+    <p><i>Travel plan: </i>Barcelona</p>
+    <table class="table">
+        <tr ng-repeat="day in travelCtrl.days" class="travelday#">
+            <td class="col-sm-1">{{ day.sartdate }}</td>
+            <td class="col-sm-1">Day {{ day.num }}</td>
+            <td class="col-lg-5">{{ day.plan.title }}
+                <table class="details" >
+                    <tr>
+                        <td>{{ day.plan.activity.title }}</td>
+                    </tr>
+                    <tr>
+                        <td><img src="{{ day.plan.activity.image }}" style="float:right;"/>
+                            {{ day.plan.activity.description }}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-sm-1">{{ day.wather }} <img src="../assets/img/SunCloud.jpg"></td>
+        </tr>
+    </table>
 
-        <br><br><br>
-        <table class="table">
-            <tr ng-repeat="day in travelCtrl.days">
-                <td class="col-sm-1">{{ day.sartdate }}</td>
-                <td class="col-lg-5">{{ day.plan }}</td>
-                <td class="col-sm-1">{{ day.wather }}</td>
-            </tr>
-        </table>
-
-    </div>
+</div>
