@@ -100,7 +100,7 @@ configuration file to run them.
 The easiest way to run the unit tests is to use the supplied npm script:
 
 ```
-npm test
+sudo npm test 
 ```
 
 This script will start the Karma test runner to execute the unit tests. Moreover, Karma will sit and
