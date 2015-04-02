@@ -36,7 +36,7 @@ angular.module('travelPlaneApp.travelplan', ['ngRoute'])
                     description: 'When the original Episcopal Palace was destroyed by a fire in the 19th century, Bishop Grau decided to assign the design of the new building to his friend Antoni Gaudí. The two had become friends when Grau was general vicar in the archdiocese of Tarragona and had inaugurated a church for which the architect had designed the high altar.',
                     image: '../assets/img/norwegianIcon.jpg'
                 }},
-                wather: '+16, Sun'},
+                wather: '+16, Sun'}
 
         ];
 
@@ -46,5 +46,4 @@ angular.module('travelPlaneApp.travelplan', ['ngRoute'])
             isFirstDisabled: false
         };
 
-        var ffvdfvs = "dfvasd";
 }]);
