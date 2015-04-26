@@ -7,6 +7,12 @@ To get you started you can simply clone the travelplan repository and install th
 ```
 git to clone the https://github.com/greezlyk/travelplan.git
 ```
+
+To push to reposetory use:
+```
+git push -u origin master
+```
+
 ### Prerequisites
 
 You need git to clone the https://github.com/greezlyk/travelplan repository.
