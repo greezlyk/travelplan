@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('travelPlaneApp.version.version-directive', [])
+angular.module('travelplanApp.version.version-directive', [])
 
 .directive('appVersion', ['version', function(version) {
   return function(scope, elm, attrs) {

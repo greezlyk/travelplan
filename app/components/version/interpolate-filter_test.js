@@ -1,7 +1,7 @@
 'use strict';
 
-describe('travelPlaneApp.version module', function() {
-  beforeEach(module('travelPlaneApp.version'));
+describe('travelplanApp.version module', function() {
+  beforeEach(module('travelplanApp.version'));
 
   describe('interpolate filter', function() {
     beforeEach(module(function($provide) {

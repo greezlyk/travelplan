@@ -1,7 +1,7 @@
 'use strict';
 
-describe('travelPlaneApp.version module', function() {
-  beforeEach(module('travelPlaneApp.version'));
+describe('travelplanApp.version module', function() {
+  beforeEach(module('travelplanApp.version'));
 
   describe('app-version directive', function() {
     it('should print current version', function() {

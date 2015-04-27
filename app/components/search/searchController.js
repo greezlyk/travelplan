@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('travelPlaneApp.search', ['ngRoute'])
+angular.module('travelplanApp.search', ['ngRoute'])
 
 .controller('SearchCtrl', ['$location', function($location) {
 

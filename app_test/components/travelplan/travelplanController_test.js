@@ -1,10 +1,10 @@
 'use strict';
 
-describe('travelPlaneApp.travelplan module', function() {
+describe('travelplanApp.travelplan module', function() {
 
-    beforeEach(module('travelPlaneApp.travelplan'));
+    beforeEach(module('travelplanApp.travelplan'));
 
-    describe('travelPlaneApp.travelplan controller', function(){
+    describe('travelplanApp.travelplan controller', function(){
         it('should ....', inject(function($controller) {
             //spec body
             var traveCtrl = $controller('TravelplanCtrl');

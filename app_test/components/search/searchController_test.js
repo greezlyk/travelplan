@@ -2,11 +2,11 @@
  * Created by greezlyk on 02.04.15.
  */
 
-describe('travelPlaneApp.search module', function() {
+describe('travelplanApp.search.search module', function() {
 
-    beforeEach(module('travelPlaneApp.search'));
+    beforeEach(module('travelplanApp.search'));
 
-    describe('travelPlaneApp.search controller', function(){
+    describe('travelplanApp.search controller', function(){
         it('should ....', inject(function($controller) {
             //spec body
             var searchCtrl = $controller('SearchCtrl');

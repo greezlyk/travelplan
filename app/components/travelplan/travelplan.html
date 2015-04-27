@@ -3,7 +3,7 @@
 
 <div class="travelplan"  ng-controller="TravelplanCtrl as travelCtrl">
 
-    <p><i>Where to go: </i>Barcelona</p>
+    <p><i>Where to go: <button onclick="search" class="btn btn-default" >serach again</button></i>Barcelona</p>
     <p><i>Name of the trip:</i> First time in Barcelona for 9 days</p>
     <p><i>Existing plan: </i>Barcelona</p>
     <p><i>Travel plan: </i>Barcelona</p>
@@ -17,7 +17,7 @@
                         <td>{{ day.plan.activity.title }}</td>
                     </tr>
                     <tr>
-                        <td><img src="{{ day.plan.activity.image }}" style="float:right;"/>
+                        <td><img src="{{ day.plan.activity.image}}" style="float:right;"/>
                             {{ day.plan.activity.description }}
                         </td>
                     </tr>
@@ -27,4 +27,10 @@
         </tr>
     </table>
 
+    <br>
+    <li ng-repeat="phone in phones">
+        <h3>{{phone.id}}</h3><br>
+        {{phone.snippet}}
+
+    </li>
 </div>

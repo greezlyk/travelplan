@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('travelPlaneApp.version.interpolate-filter', [])
+angular.module('travelplanApp.version.interpolate-filter', [])
 
 .filter('interpolate', ['version', function(version) {
   return function(text) {

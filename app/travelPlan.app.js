@@ -1,8 +1,8 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
-angular.module('travelPlaneApp', [
-  'ngRoute', 'travelPlaneApp.search', 'travelPlaneApp.travelplan', 'travelPlaneApp.version'
+
+angular.module('travelplanApp', [
+  'ngRoute', 'travelplanApp.search', 'travelplanApp.travelplan', 'travelplanApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
@@ -13,6 +13,13 @@ config(['$routeProvider', function($routeProvider) {
       when('/travelplan', {
           templateUrl: 'components/travelplan/travelplan.html',
           controller: 'TravelplanCtrl'
+
+      }).
+      when('/phoneCatalog', {
+          templateUrl: 'components/travelplan/phoneCatalog.html',
+          controller:  'PhoneController'
       }).
       otherwise({redirectTo: '/search'});
+
 }]);
+

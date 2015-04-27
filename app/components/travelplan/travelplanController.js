@@ -1,9 +1,44 @@
 'use strict';
 
-angular.module('travelPlaneApp.travelplan', ['ngRoute'])
+angular.module('travelplanApp.travelplan', ['ngRoute', 'travelplanApp.travelplanService'])
+.controller('PhoneController', function($scope, $http) {
+
+        $http.get('data/phones.json').success(function(data) {
+            $scope.phones = data;
+
+            var efwefqw=data;
+            var cadac = efwefqw;
+        });
+
+/*
+        $http.get('data/days.json').success(function(data) {
+
+            var aaa = data;
+            var activity = aaa;
+        });
+
+ */
+    })
+
+.controller('TravelplanCtrl',  function($scope, $http, dayList, phoneList, JsonService, JsonServicePlanList) {
 
 
-.controller('TravelplanCtrl', [function() {
+/*        $http.get('data/phones.json').success(function(data) {
+            $scope.phones = data;
+        });*/
+
+
+        var ffff = "";
+
+        JsonService.get(function(data){
+            var testobj = data.name;
+            var testobj1 = data.children;
+        });
+
+        JsonServicePlanList.get(function(daysList) {
+            var testobj = daysList.travelName;
+            var testobj1 = daysList.children;
+        });
 
         this.days = [
             { sartdate:'02/04/2015', num:'1', plan: { title: 'Flight Oslo to Barcelona',
@@ -13,7 +48,6 @@ angular.module('travelPlaneApp.travelplan', ['ngRoute'])
                     image: '../assets/img/baLogoSm1.jpg'
                 }}
                 , wather: '+14, Sun'},
-            { sartdate:'03/04/2015', num:'2', plan: { title: 'Check-in to hotel'}, wather: '+14, Sun'},
             { sartdate:'04/04/2015', num:'3', plan: { title: 'Visit Gaudi!' ,
                 activity : {
                     title: 'Wiki description',
@@ -28,8 +62,6 @@ angular.module('travelPlaneApp.travelplan', ['ngRoute'])
                     image: '../assets/img/Dali-Barcelona2015.jpg'
                 }}
                 , wather: '+15, Sun'},
-            { sartdate:'06/04/2015', num:'5', plan: { title: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'}, wather: '+14, Sun'},
-            { sartdate:'07/04/2015', num:'6', plan: { title: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec '}, wather: '+14, Sun'},
             { sartdate:'08/04/2015', num:'7', plan: { title: 'Flight Back to Oslo' ,
                 activity : {
                     title: 'Wiki description',
@@ -46,4 +78,4 @@ angular.module('travelPlaneApp.travelplan', ['ngRoute'])
             isFirstDisabled: false
         };
 
-}]);
+});
