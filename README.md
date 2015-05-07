@@ -5,7 +5,7 @@
 
 To get you started you can simply clone the travelplan repository and install the dependencies:
 ```
-git to clone the https://github.com/greezlyk/travelplan.git
+git clone https://github.com/greezlyk/travelplan.git
 ```
 
 To push to reposetory use:
